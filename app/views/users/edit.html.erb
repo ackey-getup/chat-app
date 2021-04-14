@@ -10,6 +10,7 @@
     
     <div class='account-page__inner--right user-form'>
       <%= form_with model: current_user, local: true do |f|%>
+      
         <div class='field'>
           <div class='field-label'>
             <%= f.label :name%>
@@ -31,7 +32,7 @@
         <div class='actions'>
           <%= f.submit "Update", class: 'btn'%>
         </div>
-        
+
       <% end %>
     </div>
   </div>
